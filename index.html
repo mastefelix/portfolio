@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Александр Курганский | Python-разработчик</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AK</a>
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#about">История</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero-секция -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Python-разработчик,</span>
+                <span class="title-line">который превращает</span>
+                <span class="title-line">
+                    <span id="changing-text">сложные задачи</span>
+                </span>
+                <span class="title-line">в понятные решения.</span>
+            </h1>
+            <p class="hero-subtitle">Разрабатываю на Python, создаю веб-приложения, анализирую данные и объясняю сложное через простые аналогии.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Исследовать проекты</a>
+                <a href="#contact" class="btn btn-secondary">Связаться со мной</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Листайте вниз</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Секция проектов -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Мои проекты</h2>
+            <p class="section-subtitle">От идеи до работающего кода. Каждый проект — это решение конкретной задачи.</p>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="web">Веб</button>
+                <button class="filter-btn" data-filter="analytics">Аналитика</button>
+            </div>
+            
+            <div class="projects-grid" id="projects-grid">
+                <!-- Проекты загружаются через JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция навыков -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Навыки и методология</h2>
+            <p class="section-subtitle">Технологии, которые я использую, и подход к работе</p>
+            
+            <div class="skills-container">
+                <div class="skills-visual">
+                    <div class="skills-cloud" id="skills-cloud">
+                        <!-- Облако тегов генерируется через JS -->
+                    </div>
+                </div>
+                
+                <div class="methodology">
+                    <div class="methodology-item">
+                        <div class="methodology-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Вижу глазами пользователя</h3>
+                        <p>Начинаю с анализа потребностей. Пример: при разработке ТЗ для приложения записи на курсы я сначала исследовал, с какими сложностями сталкиваются администраторы и клиенты.</p>
+                    </div>
+                    
+                    <div class="methodology-item">
+                        <div class="methodology-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3>Объясняю через аналогии</h3>
+                        <p>Сложные концепции становятся понятными, когда находишь подходящее сравнение из жизни. Этот подход помогает мне и в преподавании, и в документации к коду.</p>
+                    </div>
+                    
+                    <div class="methodology-item">
+                        <div class="methodology-icon">
+                            <i class="fas fa-flag-checkered"></i>
+                        </div>
+                        <h3>Довожу до результата</h3>
+                        <p>От прототипа до работающего решения. Мой парсер данных с BeautifulSoup начинался как учебный проект, а теперь помогает структурировать информацию для анализа.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "История" -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Мой путь в IT</h2>
+            <p class="section-subtitle">От управления процессами в рознице к Python-разработке</p>
+            
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2014-2020</div>
+                        <h3>Управление процессами в рознице</h3>
+                        <p>Работа в «М.Видео» научила меня видеть бизнес-процессы изнутри, оптимизировать их и находить решения, которые экономят время и ресурсы. Этот опыт помогает мне сегодня понимать реальные потребности бизнеса.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020-2022</div>
+                        <h3>Осознанный переход в IT</h3>
+                        <p>Решение начать преподавать то, что изучал сам. Параллельно с работой углублялся в Python, алгоритмы и веб-разработку. Преподавание стало лучшим способом систематизировать знания.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022-2024</div>
+                        <h3>Разработка курсов и углубление в анализ</h3>
+                        <p>Создание учебных программ по Python и веб-разработке для школьников. Параллельно изучал системный анализ, работу с базами данных и инструменты визуализации процессов (Draw.io).</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - настоящее время</div>
+                        <h3>Фокус на Python-разработке и аналитике</h3>
+                        <p>Создание веб-приложений на Flask, работа с данными (Pandas, NumPy), использование нейросетей в работе. Активно развиваюсь в направлении backend-разработки и анализа данных.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция контактов -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь со мной</h2>
+            <p class="section-subtitle">Открыт к интересным задачам в разработке и анализе</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Давайте обсудим ваш проект</h3>
+                    <p>Ищу возможности для роста в Python-разработке, анализе данных или создании образовательных IT-продуктов.</p>
+                    
+                    <div class="contact-links">
+                        <a href="mailto:alexandr.kurganskii@yandex.ru" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>alexandr.kurganskii@yandex.ru</span>
+                        </a>
+                        <a href="tel:+79637443441" class="contact-link">
+                            <i class="fas fa-phone"></i>
+                            <span>+7 (963) 744-34-41</span>
+                        </a>
+                        <a href="https://github.com/mastefelix" target="_blank" class="contact-link">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/mastefelix</span>
+                        </a>
+                        <a href="https://hh.ru" target="_blank" class="contact-link">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Мое резюме на HH.ru</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Александр Курганский. Все права защищены.</p>
+            <p>Сайт-портфолио разработчика Python.</p>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для проектов -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="modal-body">
+                <!-- Содержимое загружается через JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
